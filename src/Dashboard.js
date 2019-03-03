@@ -1,0 +1,27 @@
+import React, { Component } from 'react';
+import { HashRouter, Route} from 'react-router-dom';
+
+import Users from './component/Users'
+import User from './component/User'
+
+
+class Dashboard extends Component {
+  render() {
+    //console.log(this.props)
+    return (
+      <HashRouter>
+        <div className="dashboard">
+          <div className="dashboard__title">
+            <h1>PEOPLE PAGE</h1>
+          </div>
+          <Route exact path="/" component={Users}></Route>
+          <Route path="/user/:id" component={User}></Route>
+        </div>
+      </HashRouter>
+      
+    );
+  }
+}
+
+
+export default Dashboard;
