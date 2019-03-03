@@ -3,6 +3,7 @@ import { HashRouter, Route} from 'react-router-dom';
 
 import Users from './component/Users'
 import User from './component/User'
+import SinglePost from './component/SinglePost'
 
 
 class Dashboard extends Component {
@@ -16,6 +17,7 @@ class Dashboard extends Component {
           </div>
           <Route exact path="/" component={Users}></Route>
           <Route path="/user/:id" component={User}></Route>
+          <Route path="/singlepost/:id" component={SinglePost}></Route>
         </div>
       </HashRouter>
       

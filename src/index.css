@@ -47,3 +47,14 @@ a{
 	border: 1px solid #ddd;
 	padding: 10px;
 }
+
+.addpost input{
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.addpost textarea{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+}

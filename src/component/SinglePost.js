@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-export class SinglePost extends Component {
+class SinglePost extends Component {
 	render() {
 		return (
-			<div></div>
+			<div>tes s</div>
 		);
 	}
 }
+
+export default SinglePost;
