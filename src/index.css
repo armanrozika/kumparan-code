@@ -20,7 +20,7 @@ a{
 
 
 .dashboard{
-	width: 80%;
+	width: 60%;
 	margin: 10px auto 0 auto;
 }
 
@@ -32,4 +32,18 @@ a{
 	margin: 20px;
 	border: 1px solid grey;
 	padding: 15px 0 15px 10px;
+}
+
+.user__detail{
+	width: 70%;
+	border: 1px solid grey;
+	padding: 10px;
+}
+
+
+.posts{
+	width: 100%;
+	margin: 15px 0 0 0;
+	border: 1px solid #ddd;
+	padding: 10px;
 }
