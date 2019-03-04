@@ -38,6 +38,7 @@ a{
 	width: 70%;
 	border: 1px solid grey;
 	padding: 10px;
+	position: relative;
 }
 
 
@@ -46,6 +47,17 @@ a{
 	margin: 15px 0 0 0;
 	border: 1px solid #ddd;
 	padding: 10px;
+}
+.post-wrap{
+	position: relative;
+}
+.posts__delete{
+	position: absolute;
+	right: 0;
+	top: -10px;
+	background: red;
+	cursor: pointer;
+	padding: 3px 10px;
 }
 
 .addpost input{
@@ -57,4 +69,98 @@ a{
 	width: 300px;
 	height: 100px;
 	padding: 10px;
+}
+
+.comments{
+	color: lightblue;
+}
+
+.commentform{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.commentform input{
+	width: 200px;
+	padding: 10px 0 10px 5px;
+	margin-bottom: 20px;
+}
+
+.commentform textarea{
+	width: 300px;
+	height: 100px;
+	padding: 10px 0 10px 5px;
+}
+
+.comment__name{
+	color: #067192;
+}
+
+.comment__small{
+	font-size: 14px;
+}
+
+.view__albums{
+	background: lightblue;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.albums{
+	margin-bottom: 20px;
+	border: 1px solid lightblue;
+	padding: 5px;
+}
+
+.photo-wrap{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+}
+
+.photo-item{
+	cursor: pointer;
+}
+
+.photo-big{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.photo-big-wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 400px;
+	background: #fff;
+	text-align: center;
+}
+
+.close{
+	width: 20px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: red;
+	cursor: pointer;
+	display: block;
+}
+
+.photo-hide{
+	display: none;
+}
+
+.photo-big-wrap img{
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
 }

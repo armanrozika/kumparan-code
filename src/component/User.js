@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom'
 
 import {fetchUser} from '../actions/userAction'
 import Posts from './Posts'
@@ -27,6 +28,7 @@ class User extends Component {
 					<p>Email: {this.props.user.email}</p>
 					<p>Phone: {this.props.user.phone}</p>
 					<p>Website: {this.props.user.website}</p>
+					<Link className="view__albums" to={'/albums/'+ this.props.match.params.id}>View Albums</Link>
 				</div>
 				<Posts userid={this.props.match.params.id}/>
 			</div>

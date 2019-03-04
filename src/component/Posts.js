@@ -12,7 +12,7 @@ class Posts extends Component {
 	}
 
 	componentDidMount(){
-		this.props.fetchPosts()
+		this.props.fetchPosts(this.props.userid)
 	}
 
 	componentWillReceiveProps(nextProps){
@@ -21,17 +21,21 @@ class Posts extends Component {
 		}
 	}
 
+
+
 	render() {
 		//console.log(this.props.posts)
 		const postLists = this.props.posts.map((post)=>{
-			if(post.userId == this.props.userid){
-				return (
-					<Link key={post.id} to={"/singlepost/" + post.id}>
+			return (
+				<div key={post.id} className="post-wrap">
+					<Link  to={"/singlepost/" + post.id}>
 						<p className="posts" >{post.title}</p>
 					</Link>
-				)
-			}
-		})
+				</div>
+				
+			)
+		});
+
 		return (
 			<div>
 				<h2>POSTS</h2>
