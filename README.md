@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Project ini dapat dilihat secara di https://armanrozika.github.io/kumparan-build/
+Project ini dapat dilihat secara langsung di https://armanrozika.github.io/kumparan-build/
 
 Dalam project ini saya menggunakan CRA-create react app, dan menggunakan redux sebagai state management, bersama dengan redux-thunk untuk melakukan panggilan asynchronous di dalam redux.
 
